@@ -1,0 +1,22 @@
+command=$1
+case $command in
+    -h)
+        echo "commands: "
+        echo "    -h                         show this help "
+        echo "    keys [key]                 show keys in the object(default root)"
+        echo "    get [-a] <key>             get value from the object, or get everything in the object with option -a"
+        echo "    set [-o] <key> <value>     add or update the value of the key, or simply add the object as a sub-object of the key with option -o"
+        ;; 
+    keys)
+        echo "keys"
+        ;;
+    get)
+        echo "get"
+        ;;
+    set)
+        echo "set"
+        ;;
+    *)
+        echo "not valid input $command"
+esac
+
